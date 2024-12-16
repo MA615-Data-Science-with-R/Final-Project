@@ -1,0 +1,155 @@
+---
+title: "Data Science with R- Final Project Report"
+format: beamer
+editor: visual
+---
+
+# Sri Lanka- Data Analysis
+
+## Introduction:
+
+This project analyzes various aspects of Sri Lanka including demographics, economy, tourism, agriculture, mental health challenges, and threats like natural disasters It combines static reporting with interactive visualisations to provide a comprehensive overview. I built a Shiny dashboard was developed to provide an interactive user experience, allowing users to navigate through various insights using dynamic content.
+
+## Objectives:
+
+The primary goals of this project were to:
+
+1.  Create an **interactive Shiny application** to allow navigation between sections.
+
+2.  **Visualize key information** about Sri Lanka across several dimensions (demographics, economic data, SWOT analysis).
+
+3.  Use **plots, maps, and visuals** to present data insights effectively.
+
+4.  Provide a structured comparison of GDP, population, and economic opportunities.
+
+5.  Highlight challenges such as mental health and natural disasters while emphasizing strengths and opportunities.
+
+## **Methodology**
+
+### **1. Data Collection and Preparation**
+
+-   Datasets included:
+
+    -   Cleaned South Asian economic and demographic data.
+
+    -   Tourism statistics for Sri Lanka
+
+    -   Mental health and suicide rates in Sri Lanka
+
+    -   Agricultural production data for various districts.
+
+    -   Consolidated information on natural disasters.
+
+-   **Data Cleaning**:
+
+    -   I focused on cleaning datasets in a different file, so the development of the Shiny app could be viewed clearly.
+
+    -   Spaces in column names were replaced with consistent formats (e.g., replacing spaces with periods) to ensure cleanliness was done here
+
+    -   Irrelevant or incomplete rows were removed for better accuracy.
+
+### **2. Shiny Application Development**
+
+The interactive application was built using **R Shiny**. The layout consists of:
+
+1.  **Navigation Panel**: Users can click buttons to access the following sections:
+
+    -   General Description
+
+    -   Key Demographics
+
+    -   Comparative Analysis
+
+    -   SWOT Analysis
+
+    -   References
+
+2.  **Main Content Panel**: Displays dynamic tabs and content based on the selected section.
+
+## **3. Key Sections of the Application**
+
+### **3.1 General Description**
+
+-   **Global Location**: A map was integrated using. `leaflet` to highlight Sri Lanka's location in the Indian Ocean.
+
+-   **Key Facts**: Bullet points showcase interesting facts about Sri Lanka, including its nickname, natural wonders, and industries.
+
+-   **General Description**: Descriptive paragraphs provide an overview of Sri Lanka's history, population, and culture. Few images enhance the visual appeal of the app.
+
+### **3.2 Key Demographics**
+
+This section focuses on Sri Lanka's:
+
+-   **Ethnic Groups**: Visualizes the diversity in population, emphasizing major ethnicities such as Sinhalese, Sri Lankan Tamils, Moors, and Burghers.
+
+-   **Languages Spoken**: Explains the country's official and widely spoken languages: Sinhala, Tamil, and English.
+
+-   **Population**: Provides insights into Sri Lanka's population distribution across ethnicities.
+
+### **3.3 Comparative Analysis**
+
+This section uses bar charts and scatter plots to compare Sri Lanka with other South Asian countries:
+
+-   **GDP Comparison**:
+
+    -   India leads in GDP, reflecting its economic dominance.
+
+    -   Sri Lanka's GDP demonstrates steady growth compared to smaller economies like Bhutan and Nepal.
+
+-   **Population Comparison**:
+
+    -   India's massive population highlights its demographic impact.
+
+    -   Sri Lanka's smaller population enables focused development opportunities.
+
+-   **GDP vs Population**:
+
+    -   A scatter plot highlights the correlation between GDP and population, with Sri Lanka positioned as a country with economic growth potential.
+
+### **3.4 SWOT Analysis**
+
+The SWOT analysis identifies Sri Lanka's strengths, weaknesses, opportunities, and threats using **data-driven visuals**:
+
+-   **Strength**:
+
+    -   **Tourism Industry**: Line plots illustrate the growth of tourism GDP and per capita income until 2018, showcasing tourism as a major strength.
+
+-   **Weakness**:
+
+    -   **Mental Health Challenges**: Suicide trends by age group highlight significant mental health issues, particularly among young and middle-aged populations.
+
+-   **Opportunity**:
+
+    -   **Agricultural Potential**: Bar charts showcase high agricultural production in districts like Polonnaruwa and Anuradhapura, emphasizing untapped potential for growth.
+
+-   **Threat**:
+
+    -   **Natural Disasters**: A stacked bar chart visualizes the impact of disasters such as floods, landslides, and cyclones, which cause significant losses.
+
+## **4. References**
+
+The final section provides all data sources used in the project:
+
+1.  **https://www.indiaodysseytours.com/knows/facts-about-sri-lanka.html**
+
+2.  <https://en.wikipedia.org/wiki/Sri_Lanka>
+
+3.  <https://www.maiglobetravels.com/language-in-sri-lanka>
+
+4.  <https://www.kaggle.com>
+
+5.  <https://www.imf.org/external/datamapper/profile/LKA>
+
+6.  Google AI & ChatGPT (For content + Report)
+
+## Challenges:
+
+-   The images needed to be in a different folder(www) on my system, to show up in the app
+
+-   The collection of data was a bit tiresome
+
+## **Conclusion**
+
+This project successfully utilized Shiny in R to develop an interactive dashboard showcasing comprehensive insights into Sri Lanka. By combining visualizations, interactive tabs, and structured content, users can easily explore critical aspects of the country's strengths, challenges, and growth opportunities. The project provides a foundation for policymakers, researchers, and students to analyze data effectively and derive meaningful conclusions.
+
+## 
